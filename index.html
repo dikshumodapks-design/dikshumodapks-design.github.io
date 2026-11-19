@@ -317,6 +317,103 @@
             box-shadow: 0 0 15px rgba(0, 240, 255, 0.6);
             animation: vipFloat 3.8s ease-in-out infinite;
         }
+
+        .growth-box {
+            width: 100%;
+            background: rgba(20, 20, 28, 0.94);
+            border: 2px solid #a855f7;
+            border-radius: 14px;
+            padding: 14px;
+            margin-top: 10px;
+            text-align: center;
+            box-shadow: 0 0 18px rgba(168, 85, 247, 0.35);
+        }
+
+        .growth-main-btn {
+            display: block;
+            width: 100%;
+            padding: 11px;
+            border-radius: 10px;
+            background: linear-gradient(90deg, #9333ea, #ec4899);
+            color: #fff;
+            font-weight: 900;
+            font-size: 13px;
+            text-decoration: none;
+            margin-bottom: 8px;
+            box-shadow: 0 0 12px rgba(236, 72, 153, 0.5);
+        }
+
+        .sub-btn-open {
+            display: block;
+            width: 100%;
+            padding: 9px;
+            border-radius: 8px;
+            background: linear-gradient(90deg, #00b9f1, #1a73e8);
+            color: #fff;
+            font-weight: 800;
+            font-size: 12px;
+            text-decoration: none;
+            margin-bottom: 6px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .sub-btn-how {
+            display: block;
+            width: 100%;
+            padding: 9px;
+            border-radius: 8px;
+            background: linear-gradient(90deg, #f59e0b, #d97706);
+            color: #fff;
+            font-weight: 800;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        .pay5-box {
+            background: rgba(12, 12, 18, 0.95);
+            border: 1.5px solid #f59e0b;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        .pay5-title {
+            font-size: 12px;
+            font-weight: 900;
+            color: #fde047;
+            margin-bottom: 6px;
+        }
+
+        .pay5-upi-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 5px;
+            margin-bottom: 8px;
+        }
+
+        .pay5-upi-btn {
+            padding: 6px 4px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 800;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .pay5-verify-btn {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-radius: 7px;
+            background: linear-gradient(90deg, #10b981, #059669);
+            color: #fff;
+            font-weight: 900;
+            font-size: 12px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -382,6 +479,56 @@
         <a href="https://t.me/dikshastore09" class="kodular-app-btn" target="_blank">
             📥✅😊 UPDATE AANE PAR MESSAGE KARE 😊✅
         </a>
+
+        <!-- Button 1: SUBSCRIBER KAISE KHARIDE (Original ₹5 UTR Verification) -->
+        <div class="growth-box">
+            <a href="YOUR_SUBSCRIBER_MAIN_LINK_HERE" target="_blank" rel="noopener noreferrer" class="growth-main-btn">
+                SUBSCRIBER KAISE KHARIDE
+            </a>
+
+            <div id="pay5Panel_sub" class="pay5-box">
+                <div class="pay5-title">🔒 PAY ₹5 TO UNLOCK "1. OPEN TOO LINK"</div>
+                <div class="pay5-upi-row">
+                    <a href="upi://pay?pa=9343479805@ybl&pn=DikshaStore&am=5.00&cu=INR" class="pay5-upi-btn phonepe-btn">PhonePe ₹5</a>
+                    <a href="upi://pay?pa=9343479805@ybl&pn=DikshaStore&am=5.00&cu=INR" class="pay5-upi-btn gpay-btn">GPay ₹5</a>
+                    <a href="upi://pay?pa=9343479805@ybl&pn=DikshaStore&am=5.00&cu=INR" class="pay5-upi-btn paytm-btn">Paytm ₹5</a>
+                </div>
+                <input type="text" id="utr5_sub" class="input-box" style="margin-bottom: 6px; padding: 8px; font-size: 12px;" placeholder="Enter 12-Digit ₹5 UTR...">
+                <button id="btnVerify5_sub" onclick="unlockFiveRupee('sub')" class="pay5-verify-btn">VERIFY ORIGINAL ₹5 UTR 🔓</button>
+            </div>
+
+            <button id="openBtn_sub" onclick="handleFiveRupeeOpen('sub', 'YOUR_SUBSCRIBER_OPEN_LINK_HERE')" class="sub-btn-open">
+                🔒 1. OPEN TOO LINK (PAY ₹5)
+            </button>
+            <a href="YOUR_SUBSCRIBER_HOW_LINK_HERE" target="_blank" rel="noopener noreferrer" class="sub-btn-how">
+                2. HOW TOO LINK ⚠️
+            </a>
+        </div>
+
+        <!-- Button 2: INSTAGRAM FOLLOWERS KAISE KHARIDE (Original ₹5 UTR Verification) -->
+        <div class="growth-box">
+            <a href="YOUR_INSTAGRAM_MAIN_LINK_HERE" target="_blank" rel="noopener noreferrer" class="growth-main-btn">
+                INSTAGRAM FOLLOWERS KAISE KHARIDE
+            </a>
+
+            <div id="pay5Panel_ig" class="pay5-box">
+                <div class="pay5-title">🔒 PAY ₹5 TO UNLOCK "1. OPEN TOO LINK"</div>
+                <div class="pay5-upi-row">
+                    <a href="upi://pay?pa=9343479805@ybl&pn=DikshaStore&am=5.00&cu=INR" class="pay5-upi-btn phonepe-btn">PhonePe ₹5</a>
+                    <a href="upi://pay?pa=9343479805@ybl&pn=DikshaStore&am=5.00&cu=INR" class="pay5-upi-btn gpay-btn">GPay ₹5</a>
+                    <a href="upi://pay?pa=9343479805@ybl&pn=DikshaStore&am=5.00&cu=INR" class="pay5-upi-btn paytm-btn">Paytm ₹5</a>
+                </div>
+                <input type="text" id="utr5_ig" class="input-box" style="margin-bottom: 6px; padding: 8px; font-size: 12px;" placeholder="Enter 12-Digit ₹5 UTR...">
+                <button id="btnVerify5_ig" onclick="unlockFiveRupee('ig')" class="pay5-verify-btn">VERIFY ORIGINAL ₹5 UTR 🔓</button>
+            </div>
+
+            <button id="openBtn_ig" onclick="handleFiveRupeeOpen('ig', 'YOUR_INSTAGRAM_OPEN_LINK_HERE')" class="sub-btn-open">
+                🔒 1. OPEN TOO LINK (PAY ₹5)
+            </button>
+            <a href="YOUR_INSTAGRAM_HOW_LINK_HERE" target="_blank" rel="noopener noreferrer" class="sub-btn-how">
+                2. HOW TOO LINK ⚠️
+            </a>
+        </div>
     </div>
 
     <!-- ================= SCREEN 2: STORE PAGE ================= -->
@@ -433,8 +580,69 @@
     </div>
 
     <script>
+        const UTR_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzLrGqOMCwzN6qprH09wWEXOjqTqcQG0kDYn-awOgB6ZQTqUxTiAZ2wqm1dChDpzGTq3g/exec";
+
         function openQRModal() { document.getElementById('qrModal').classList.remove('hidden'); }
         function closeQRModal() { document.getElementById('qrModal').classList.add('hidden'); }
+
+        function isFiveRupeeUnlocked(type) {
+            return localStorage.getItem('paid5_unlocked_' + type) === 'true';
+        }
+
+        function updateFiveRupeeUI(type) {
+            if (isFiveRupeeUnlocked(type)) {
+                let panel = document.getElementById('pay5Panel_' + type);
+                let btn = document.getElementById('openBtn_' + type);
+                if (panel) panel.classList.add('hidden');
+                if (btn) btn.innerText = "1. OPEN TOO LINK 🔓";
+            }
+        }
+
+        async function unlockFiveRupee(type) {
+            let utrInput = document.getElementById('utr5_' + type);
+            let btn = document.getElementById('btnVerify5_' + type);
+            let utr = utrInput ? utrInput.value.trim() : "";
+
+            if (utr.length !== 12 || isNaN(utr)) {
+                alert("❌ Kripya valid 12-digit original UTR number enter karein!");
+                return;
+            }
+
+            let originalText = btn ? btn.innerText : "VERIFY ORIGINAL ₹5 UTR 🔓";
+            if (btn) {
+                btn.innerText = "VERIFYING REAL UTR... ⏳";
+                btn.disabled = true;
+            }
+
+            try {
+                let deviceId = getDeviceId();
+                let response = await fetch(`${UTR_SCRIPT_URL}?utr=${encodeURIComponent(utr)}&deviceId=${encodeURIComponent(deviceId)}&amount=5`);
+                let result = await response.json();
+
+                if (result.status === "SUCCESS") {
+                    alert(result.message || "✅ Original ₹5 UTR Verified! Link unlock ho gaya hai.");
+                    localStorage.setItem('paid5_unlocked_' + type, 'true');
+                    updateFiveRupeeUI(type);
+                } else {
+                    alert(result.message || "❌ UTR verification failed! Kripya original UTR enter karein.");
+                }
+            } catch (err) {
+                alert("⚠️ Server error! Original UTR check karne me dikkat aai. Dobara try karein.");
+            } finally {
+                if (btn) {
+                    btn.innerText = originalText;
+                    btn.disabled = false;
+                }
+            }
+        }
+
+        function handleFiveRupeeOpen(type, targetUrl) {
+            if (!isFiveRupeeUnlocked(type)) {
+                alert("🔒 Pehle ₹5 pay karke 12-digit original UTR verify karein, tabhi '1. OPEN TOO LINK' open hoga!");
+                return;
+            }
+            window.open(targetUrl, '_blank', 'noopener,noreferrer');
+        }
 
         const VIP_LINKS = {
             zarchiver: "https://www.mediafire.com/file/xz8k7i7dgl15opf/MOST+IMPORTANT+ZARCHIVER.apk/file",
@@ -511,10 +719,9 @@
             btn.disabled = true;
 
             let deviceId = getDeviceId();
-            let scriptURL = "https://script.google.com/macros/s/AKfycbzLrGqOMCwzN6qprH09wWEXOjqTqcQG0kDYn-awOgB6ZQTqUxTiAZ2wqm1dChDpzGTq3g/exec";
 
             try {
-                let response = await fetch(`${scriptURL}?utr=${utr}&deviceId=${deviceId}`);
+                let response = await fetch(`${UTR_SCRIPT_URL}?utr=${utr}&deviceId=${deviceId}`);
                 let result = await response.json();
 
                 if (result.status === "SUCCESS") {
@@ -593,6 +800,9 @@
         }
 
         window.onload = function() {
+            updateFiveRupeeUI('sub');
+            updateFiveRupeeUI('ig');
+
             let savedExpiry = localStorage.getItem('vip_expiry');
             if (savedExpiry) {
                 if (Date.now() < parseInt(savedExpiry)) {
