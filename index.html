@@ -359,7 +359,10 @@
         }
 
         .sub-btn-how {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
             width: 100%;
             padding: 9px;
             border-radius: 8px;
@@ -368,6 +371,20 @@
             font-weight: 800;
             font-size: 12px;
             text-decoration: none;
+        }
+
+        .yt-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 14px;
+            border-radius: 3px;
+            background: #ff0000;
+            color: #ffffff;
+            font-size: 9px;
+            line-height: 1;
+            box-shadow: 0 0 6px rgba(255, 0, 0, 0.7);
         }
 
         .pay5-box {
@@ -423,9 +440,9 @@
     <!-- QR CODE MODAL POPUP -->
     <div id="qrModal" class="hidden">
         <div class="qr-content">
-            <div style="font-size: 15px; font-weight: 900; color: #00f0ff; margin-bottom: 10px;">SCAN QR & PAY ₹20</div>
-            <img src="YAHAN_APNE_UPI_QR_CODE_KA_IMAGE_LINK_DAALEIN" alt="UPI QR Code" style="width: 180px; height: 180px; border-radius: 8px; background: #fff; padding: 5px; margin-bottom: 12px;">
-            <p style="font-size: 11px; color: #ccc; margin-bottom: 15px;">Scan with any UPI app (PhonePe, GPay, Paytm)</p>
+            <div style="font-size: 15px; font-weight: 900; color: #00f0ff; margin-bottom: 10px;">SCAN QR & PAY ₹15</div>
+            <img src="https://i.ibb.co/Qjq0RYsS/Screenshot-2026-11-20-21-36-49-433-in-org-npci-upiapp-edit.jpg" alt="UPI QR Code" style="width: 180px; height: 180px; border-radius: 8px; background: #fff; padding: 5px; margin-bottom: 12px;">
+            <p style="font-size: 11px; color: #ccc; margin-bottom: 15px;">UPI ID: Agrawaldiksha98@upi</p>
             <button onclick="closeQRModal()" style="background: linear-gradient(90deg, #ff0055, #ff5500); color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: 900; width: 100%; cursor: pointer;">CLOSE QR</button>
         </div>
     </div>
@@ -436,15 +453,15 @@
         <div class="creator-tag">❈☆CREATOR DEVNA ❀✭</div>
         <div class="top-badge-2">⚡ CHOOSE YOUR ACCESS MODE BELOW ⚡</div>
 
-        <!-- GATE 1: VIP ACCESS (₹20 DIRECT) -->
+        <!-- GATE 1: VIP ACCESS (₹15 DIRECT) -->
         <div class="box-card vip-box">
             <div class="title-text" style="color: #a855f7;">👑 VIP ACCESS (INSTANT MEDIAFIRE LINK)</div>
-            <p style="font-size: 11px; color: #ccc; margin-bottom: 8px;">Pay ₹20 & enter UTR to get Direct Downloads!</p>
+            <p style="font-size: 11px; color: #ccc; margin-bottom: 8px;">Pay ₹15 & enter UTR to get Direct Downloads!</p>
             
             <div class="upi-grid">
-                <a href="upi://pay?pa=9343479805@ybl&pn=DikshaStore&am=20.00&cu=INR" class="upi-btn phonepe-btn">PhonePe</a>
-                <a href="upi://pay?pa=9343479805@ybl&pn=DikshaStore&am=20.00&cu=INR" class="upi-btn gpay-btn">Google Pay</a>
-                <a href="upi://pay?pa=9343479805@ybl&pn=DikshaStore&am=20.00&cu=INR" class="upi-btn paytm-btn">Paytm</a>
+                <a href="upi://pay?pa=Agrawaldiksha98@upi&pn=DikshaStore&am=15.00&cu=INR" class="upi-btn phonepe-btn">PhonePe</a>
+                <a href="upi://pay?pa=Agrawaldiksha98@upi&pn=DikshaStore&am=15.00&cu=INR" class="upi-btn gpay-btn">Google Pay</a>
+                <a href="upi://pay?pa=Agrawaldiksha98@upi&pn=DikshaStore&am=15.00&cu=INR" class="upi-btn paytm-btn">Paytm</a>
                 <button onclick="openQRModal()" class="upi-btn qrcode-btn">📷 QR CODE</button>
             </div>
 
@@ -480,7 +497,7 @@
             📥✅😊 UPDATE AANE PAR MESSAGE KARE 😊✅
         </a>
 
-        <!-- Button 1: SUBSCRIBER KAISE KHARIDE (Original ₹5 UTR Verification) -->
+        <!-- Button 1: SUBSCRIBER KAISE KHARIDE -->
         <div class="growth-box">
             <a href="YOUR_SUBSCRIBER_MAIN_LINK_HERE" target="_blank" rel="noopener noreferrer" class="growth-main-btn">
                 SUBSCRIBER KAISE KHARIDE
@@ -489,23 +506,23 @@
             <div id="pay5Panel_sub" class="pay5-box">
                 <div class="pay5-title">🔒 PAY ₹5 TO UNLOCK "1. OPEN TOO LINK"</div>
                 <div class="pay5-upi-row">
-                    <a href="upi://pay?pa=9343479805@ybl&pn=DikshaStore&am=5.00&cu=INR" class="pay5-upi-btn phonepe-btn">PhonePe ₹5</a>
-                    <a href="upi://pay?pa=9343479805@ybl&pn=DikshaStore&am=5.00&cu=INR" class="pay5-upi-btn gpay-btn">GPay ₹5</a>
-                    <a href="upi://pay?pa=9343479805@ybl&pn=DikshaStore&am=5.00&cu=INR" class="pay5-upi-btn paytm-btn">Paytm ₹5</a>
+                    <a href="upi://pay?pa=Agrawaldiksha98@upi&pn=DikshaStore&am=5.00&cu=INR" class="pay5-upi-btn phonepe-btn">PhonePe ₹5</a>
+                    <a href="upi://pay?pa=Agrawaldiksha98@upi&pn=DikshaStore&am=5.00&cu=INR" class="pay5-upi-btn gpay-btn">GPay ₹5</a>
+                    <a href="upi://pay?pa=Agrawaldiksha98@upi&pn=DikshaStore&am=5.00&cu=INR" class="pay5-upi-btn paytm-btn">Paytm ₹5</a>
                 </div>
                 <input type="text" id="utr5_sub" class="input-box" style="margin-bottom: 6px; padding: 8px; font-size: 12px;" placeholder="Enter 12-Digit ₹5 UTR...">
                 <button id="btnVerify5_sub" onclick="unlockFiveRupee('sub')" class="pay5-verify-btn">VERIFY ORIGINAL ₹5 UTR 🔓</button>
             </div>
 
-            <button id="openBtn_sub" onclick="handleFiveRupeeOpen('sub', 'YOUR_SUBSCRIBER_OPEN_LINK_HERE')" class="sub-btn-open">
+            <button id="openBtn_sub" onclick="handleFiveRupeeOpen('sub', 'https://kissmilegi.com/order/new')" class="sub-btn-open">
                 🔒 1. OPEN TOO LINK (PAY ₹5)
             </button>
             <a href="YOUR_SUBSCRIBER_HOW_LINK_HERE" target="_blank" rel="noopener noreferrer" class="sub-btn-how">
-                2. HOW TOO LINK ⚠️
+                <span class="yt-badge">▶</span> 2. HOW TOO LINK OPEN ⚠️
             </a>
         </div>
 
-        <!-- Button 2: INSTAGRAM FOLLOWERS KAISE KHARIDE (Original ₹5 UTR Verification) -->
+        <!-- Button 2: INSTAGRAM FOLLOWERS KAISE KHARIDE -->
         <div class="growth-box">
             <a href="YOUR_INSTAGRAM_MAIN_LINK_HERE" target="_blank" rel="noopener noreferrer" class="growth-main-btn">
                 INSTAGRAM FOLLOWERS KAISE KHARIDE
@@ -514,19 +531,19 @@
             <div id="pay5Panel_ig" class="pay5-box">
                 <div class="pay5-title">🔒 PAY ₹5 TO UNLOCK "1. OPEN TOO LINK"</div>
                 <div class="pay5-upi-row">
-                    <a href="upi://pay?pa=9343479805@ybl&pn=DikshaStore&am=5.00&cu=INR" class="pay5-upi-btn phonepe-btn">PhonePe ₹5</a>
-                    <a href="upi://pay?pa=9343479805@ybl&pn=DikshaStore&am=5.00&cu=INR" class="pay5-upi-btn gpay-btn">GPay ₹5</a>
-                    <a href="upi://pay?pa=9343479805@ybl&pn=DikshaStore&am=5.00&cu=INR" class="pay5-upi-btn paytm-btn">Paytm ₹5</a>
+                    <a href="upi://pay?pa=Agrawaldiksha98@upi&pn=DikshaStore&am=5.00&cu=INR" class="pay5-upi-btn phonepe-btn">PhonePe ₹5</a>
+                    <a href="upi://pay?pa=Agrawaldiksha98@upi&pn=DikshaStore&am=5.00&cu=INR" class="pay5-upi-btn gpay-btn">GPay ₹5</a>
+                    <a href="upi://pay?pa=Agrawaldiksha98@upi&pn=DikshaStore&am=5.00&cu=INR" class="pay5-upi-btn paytm-btn">Paytm ₹5</a>
                 </div>
                 <input type="text" id="utr5_ig" class="input-box" style="margin-bottom: 6px; padding: 8px; font-size: 12px;" placeholder="Enter 12-Digit ₹5 UTR...">
                 <button id="btnVerify5_ig" onclick="unlockFiveRupee('ig')" class="pay5-verify-btn">VERIFY ORIGINAL ₹5 UTR 🔓</button>
             </div>
 
-            <button id="openBtn_ig" onclick="handleFiveRupeeOpen('ig', 'YOUR_INSTAGRAM_OPEN_LINK_HERE')" class="sub-btn-open">
+            <button id="openBtn_ig" onclick="handleFiveRupeeOpen('ig', 'https://kissmilegi.com/order/new')" class="sub-btn-open">
                 🔒 1. OPEN TOO LINK (PAY ₹5)
             </button>
             <a href="YOUR_INSTAGRAM_HOW_LINK_HERE" target="_blank" rel="noopener noreferrer" class="sub-btn-how">
-                2. HOW TOO LINK ⚠️
+                <span class="yt-badge">▶</span> 2. HOW TOO LINK OPEN ⚠️
             </a>
         </div>
     </div>
@@ -639,6 +656,10 @@
         function handleFiveRupeeOpen(type, targetUrl) {
             if (!isFiveRupeeUnlocked(type)) {
                 alert("🔒 Pehle ₹5 pay karke 12-digit original UTR verify karein, tabhi '1. OPEN TOO LINK' open hoga!");
+                return;
+            }
+            if (!targetUrl || targetUrl.endsWith("_LINK_HERE")) {
+                alert("⚠️ Kripya pehle code mein actual link set karein!");
                 return;
             }
             window.open(targetUrl, '_blank', 'noopener,noreferrer');
